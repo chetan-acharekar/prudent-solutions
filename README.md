@@ -110,3 +110,11 @@ Licensed under the MIT license.
 [Landy]: https://www.npmjs.com/package/cra-template-adrinlol
 [Google Lighthouse]: https://developers.google.com/web/tools/lighthouse
 <!-- prettier-ignore-end -->
+
+
+react-scripts build
+scp -r build root@165.22.218.17:/root/prudent-solutions
+npx serve -s build -p 3000
+screen -ls
+screen -r
+sudo systemctl stop nginx
