@@ -43,6 +43,7 @@ const Home = () => {
         icon="product-launch.svg"
         id="mission"
       />
+      <Contact title={ContactContent.title}  content={ContactContent.text} id="contact"></Contact>
     </Container>
   );
 };

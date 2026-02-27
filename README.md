@@ -111,9 +111,12 @@ Licensed under the MIT license.
 [Google Lighthouse]: https://developers.google.com/web/tools/lighthouse
 <!-- prettier-ignore-end -->
 
+-- To Run Locally
+npm run start
 
-react-scripts build
-scp -r build root@165.22.218.17:/root/prudent-solutions
+ -- TO deplpy
+npm run build
+scp -r build root@X.x.x.x:/root/prudent-solutions
 npx serve -s build -p 3000
 screen -ls
 screen -r

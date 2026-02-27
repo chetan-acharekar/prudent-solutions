@@ -21,25 +21,29 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
   return (
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
-        <Col lg={12} md={11} sm={24} xs={24}>
+        <Col lg={24} md={24} sm={24} xs={24}>
           <Slide direction="left" triggerOnce>
             <Block title={title} content={content} />
+            <Block title="" content="Email- prudent.i.solutions@gmail.com" />
+            <Block title="" content="Address - 402/21, Regency Sarvam, Ganesh Mandir Road, Titwala East, Thane 421605" />
           </Slide>
         </Col>
-        <Col lg={12} md={12} sm={24} xs={24}>
+        {/* <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right" triggerOnce>
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>
               <Col span={24}>
-                <Input
+                { <Input
                   type="text"
                   name="name"
                   placeholder="Your Name"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
-                <ValidationType type="name" />
+                <ValidationType type="name" /> }
+                Mobile:
               </Col>
-              <Col span={24}>
+              <Col>Email:</Col>
+              { <Col span={24}>
                 <Input
                   type="text"
                   name="email"
@@ -48,8 +52,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   onChange={handleChange}
                 />
                 <ValidationType type="email" />
-              </Col>
-              <Col span={24}>
+              </Col> }
+              { <Col span={24}>
                 <TextArea
                   placeholder="Your Message"
                   value={values.message || ""}
@@ -57,14 +61,15 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
-              </Col>
-              <ButtonContainer>
+              </Col> }
+              { <ButtonContainer>
                 <Button name="submit">{t("Submit")}</Button>
-              </ButtonContainer>
+              </ButtonContainer> }
             </FormGroup>
           </Slide>
-        </Col>
+        </Col> */}
       </Row>
+      <Row></Row>
     </ContactContainer>
   );
 };
